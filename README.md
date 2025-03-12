@@ -1,30 +1,7 @@
-<p align="center">
-
-  <h1 align="center"><a href="">Grokking at the Edge of Numerical Stability</a></h1>
-  <p align="center">
-    <a href="https://safeandtrustedai.org/person/lucas-prieto/"><strong>Lucas Prieto</strong></a>
-    ·
-    <a href="https://scholar.google.com.tr/citations?user=cmDBJlEAAAAJ&hl=en"><strong>Melih Barsbey</strong></a>
-    ·
-    <a href="https://pmediano.gitlab.io"><strong>Pedro Mediano</strong></a><sup>*</sup>
-    ·
-    <a href="https://tolgabirdal.github.io/"><strong>Tolga Birdal</strong></a><sup>*</sup>
-  </p>
-  <p align="center">
-    <strong>Imperial College London</strong></a>
-  </p>
-  <p align="center">
-    <strong>Under Review</strong></a>
-  </p>
-  <div align="center">
-    <img src="./teaser.png" alt="Logo" width="100%">
-  </div>
-
-</p>
-
-
 <br/>
-This is the official implementation of our paper <a href="https://arxiv.org/abs/2501.04697" target="_blank"><i>Grokking at the Edge of Numerical Stability</i></a> (arXiv: 2501.04697). Here you can find guidance to reproduce the main results of the paper.
+This is the copy implementation of the paper <a href="https://arxiv.org/abs/2501.04697" target="_blank"><i>Grokking at the Edge of Numerical Stability</i></a> (arXiv: 2501.04697). 
+
+The aim is to conduct experiments for the grokking phenomenon for a master thesis.
 <br/>
 
 ## Replicating Our Results
@@ -34,14 +11,18 @@ To replicate the main figures from our paper, use the `run_main_experiments.sh` 
 ### Usage
 
 ```bash
-./run_main_experiments.sh [--figures FIGURE_LIST] [--device DEVICE]
+./run_main_experiments.sh
 ```
+- **On a MacBook**: Use the CPU for running the experiment.  
+- **On a system with an NVIDIA GPU**: You can run the experiment with CUDA.  
 
+#### Configuration
+
+You can modify the execution settings in the `run_main_experiments.sh` file to switch between CPU and CUDA.
 ## Requirements
 
 1. **Install PyTorch:**
-   
-   Visit the [PyTorch Get Started](https://pytorch.org/get-started/locally/) page to choose the appropriate installation command for your system.
+    Visit the [PyTorch Get Started](https://pytorch.org/get-started/locally/) page to choose the appropriate installation command for your system.
 
 2. **Install Python Packages:**
    Install the remaining dependencies using `pip`:
